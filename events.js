@@ -30,7 +30,7 @@ function two () {
   var two = document.getElementById('two')
 
   // Next, we add an event listener to it:
-  two.addEventListener('mouseenter', makeBlue)
+  two.addEventListener('mouseenter', makeGreen)
 
   // Finally, we add one to make the colour white again
   two.addEventListener('mouseleave', makeWhite)
@@ -61,4 +61,8 @@ function makeBlue (evt) {
 
 function makeWhite (evt) {
   evt.target.style.backgroundColor = 'white'
+}
+
+function makeGreen (evt) {
+  evt.target.style.backgroundColor = 'green'
 }
